@@ -1,0 +1,648 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap");
+
+:root {
+  --blue: #1d85e8;
+}
+
+* {
+  cursor: default;
+  margin: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  left: 0;
+  padding: 4px 108px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  font-size: 20px;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.logo-navbar img {
+  height: 64px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logo-navbar img:hover {
+  transform: scale(1.18) rotate(6deg);
+}
+
+.menu-navbar {
+  font-size: 18px;
+  display: flex;
+  gap: 32px;
+}
+
+.menu-navbar a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  transition: 0.3s;
+  color: black;
+  cursor: pointer;
+}
+
+.menu-navbar a:hover {
+  letter-spacing: 0px;
+  font-weight: 800;
+  color: var(--blue);
+}
+
+.features-navbar {
+  display: flex;
+  gap: 32px;
+}
+
+.features-navbar i {
+  font-size: 25px;
+  color: black;
+  cursor: pointer !important;
+  transition: 0.3s;
+}
+
+.features-navbar i:hover {
+  color: var(--blue);
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+.home {
+  padding: 239.5px 108px;
+  color: black;
+  justify-content: space-between;
+  background-image: url("/images/backgrounds/1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  animation: change 8s infinite;
+}
+
+.wave-home {
+  width: 100%;
+  background: url(/images/ornaments/wave-home.svg);
+  background-position: bottom;
+  height: 64px;
+  animation: animateWave0 4s linear infinite;
+}
+
+@keyframes animateWave0 {
+  0% {
+    background-position: 1366px;
+  }
+  100% {
+    background-position: 0px;
+  }
+}
+
+@keyframes animateWave00 {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 1366px;
+  }
+}
+
+.wave-product {
+  width: 100%;
+  background: url(/images/ornaments/wave-product.svg);
+  background-position: bottom;
+  height: 64px;
+  animation: animateWave00 3s linear infinite;
+}
+
+@keyframes change {
+  0% {
+    background-image: url(/images/backgrounds/1.png);
+  }
+
+  5% {
+    background-image: url(/images/backgrounds/1.png);
+  }
+
+  10% {
+    background-image: url(/images/backgrounds/1.png);
+  }
+
+  15% {
+    background-image: url(/images/backgrounds/1.png);
+  }
+
+  20% {
+    background-image: url(/images/backgrounds/1.png);
+  }
+
+  25% {
+    background-image: url(/images/backgrounds/2.png);
+  }
+
+  30% {
+    background-image: url(/images/backgrounds/2.png);
+  }
+
+  35% {
+    background-image: url(/images/backgrounds/2.png);
+  }
+
+  40% {
+    background-image: url(/images/backgrounds/2.png);
+  }
+
+  45% {
+    background-image: url(/images/backgrounds/2.png);
+  }
+
+  50% {
+    background-image: url(/images/backgrounds/3.png);
+  }
+
+  55% {
+    background-image: url(/images/backgrounds/3.png);
+  }
+
+  60% {
+    background-image: url(/images/backgrounds/3.png);
+  }
+
+  65% {
+    background-image: url(/images/backgrounds/3.png);
+  }
+
+  70% {
+    background-image: url(/images/backgrounds/3.png);
+  }
+
+  75% {
+    background-image: url(/images/backgrounds/4.png);
+  }
+
+  80% {
+    background-image: url(/images/backgrounds/4.png);
+  }
+
+  85% {
+    background-image: url(/images/backgrounds/4.png);
+  }
+
+  90% {
+    background-image: url(/images/backgrounds/4.png);
+  }
+
+  95% {
+    background-image: url(/images/backgrounds/4.png);
+  }
+
+  100% {
+    background-image: url(/images/backgrounds/1.png);
+  }
+}
+
+.home h2 {
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.home h1 {
+  margin-top: -4px;
+  margin-bottom: 6px;
+  font-size: 72px;
+  animation: back 5s linear infinite;
+  background: url(/images/ornaments/gradient.svg);
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.home p {
+  font-size: 20px;
+  margin-bottom: 26px;
+}
+
+.home a {
+  font-size: 18px;
+  padding: 10px 40px;
+  border-radius: 999px;
+  border: 3px solid var(--blue);
+  color: black;
+  background: var(--blue);
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.home i {
+  cursor: pointer;
+}
+
+.home a:hover {
+  background: white;
+  color: var(--blue);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.product {
+  background: var(--blue);
+  padding-top: 60px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product h1 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.product-category,
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1080px;
+}
+
+.product-card {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  height: 398px;
+  width: 350px;
+  background: white;
+  padding: 20px;
+  color: black;
+  align-items: center;
+  z-index: 99;
+}
+
+.product-card img {
+  border-radius: 15px;
+  width: 340px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.product-card img:hover {
+  transform: scale(1.08);
+}
+
+.product-card h2 {
+  font-size: 28px;
+}
+
+.product-card p {
+  font-size: 18px;
+  margin-top: -10px;
+  margin-bottom: -6px;
+}
+
+.product-card a {
+  color: white;
+  background: var(--blue);
+  font-size: 16px;
+  border: 3px solid var(--blue);
+  padding: 10px 0px;
+  width: 80%;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-card a:hover {
+  letter-spacing: 3px;
+  background: transparent;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about h1,
+.team h1 {
+  animation: back 36s linear infinite;
+  background: url(/images/ornaments/gradient.svg);
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.about-content p {
+  max-width: 475px;
+  text-align: justify;
+  text-indent: 40px;
+  line-height: 175%;
+  font-size: 16px;
+}
+
+.about-content .img {
+  border-radius: 15px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 300px;
+  background: var(--blue);
+  color: white;
+}
+
+.team-footer {
+  height: 180px;
+}
+
+.team {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.identity .photo {
+  height: 240px;
+  width: 240px;
+  background: var(--blue);
+  border-radius: 300px;
+  margin-bottom: 20px;
+}
+
+.identity img {
+  height: 240px;
+  width: 240px;
+  border-radius: 300px;
+  margin-bottom: 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.class,
+.role {
+  font-size: 18px;
+}
+
+.member {
+  display: flex;
+  gap: 80px;
+}
+
+footer {
+  position: relative;
+  background: var(--blue);
+  padding: 24px 0px;
+}
+
+.copyright a {
+  color: white;
+  font-weight: 800;
+  border-bottom: solid 2px white;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(/images/ornaments/wave.svg);
+  background-size: 1000px 1000px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.25;
+  bottom: 15px;
+  animation: animateWave 1s linear infinite;
+}
+
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.75;
+  bottom: 20px;
+  animation: animateWave_02 2s linear infinite;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position: 1000px;
+  }
+  100% {
+    background-position: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
+
+@keyframes animateWave {
+  0% {
+    background-position: 1000px;
+  }
+  100% {
+    background-position: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
+
+@media only screen and (max-width: 805px) {
+  .navbar {
+    padding: 2px 18px;
+  }
+
+  .menu-navbar {
+    display: none;
+  }
+
+  .home {
+    padding: 160px 24px;
+    background: white;
+  }
+
+  .home h2 {
+    font-size: 40px;
+  }
+
+  .home h1 {
+    font-size: 48px;
+  }
+
+  .home p {
+    font-size: 18px;
+  }
+
+  .home a {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+
+  .product h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .product-category,
+  .about-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .product-card {
+    height: auto;
+    width: 70%;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.08);
+  }
+
+  .about {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .about h1,
+  .team h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .about-content p {
+    max-width: 80%;
+    font-size: 14px;
+  }
+
+  .about-content .img {
+    width: 80%;
+    height: 200px;
+  }
+
+  .team {
+    padding-top: 40px;
+  }
+
+  .identity .photo {
+    height: 180px;
+    width: 180px;
+  }
+
+  .identity img {
+    height: 180px;
+    width: 180px;
+  }
+
+  .identity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    gap: 8px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .class,
+  .role {
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+
+  .member {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
