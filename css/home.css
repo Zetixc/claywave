@@ -400,7 +400,6 @@
 .identity .photo {
   height: 240px;
   width: 240px;
-  background: var(--blue);
   border-radius: 300px;
   margin-bottom: 20px;
 }
